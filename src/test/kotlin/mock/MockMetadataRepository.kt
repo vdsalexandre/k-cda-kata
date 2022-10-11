@@ -7,7 +7,7 @@ import metadata.model.TicketFromMetadata
 import metadata.repository.MetaDataTicketRepository
 import ticket.model.TicketId
 
-class TestMetadataRepository : MetaDataTicketRepository {
+class MockMetadataRepository : MetaDataTicketRepository {
 
     override fun listTickets(): List<TicketFromMetadata> {
         return listOf(

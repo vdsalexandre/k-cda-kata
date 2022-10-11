@@ -7,7 +7,7 @@ import ticket.model.TicketId
 import ticketing.model.TicketFromTicketing
 import ticketing.repository.TicketingTicketRepository
 
-class TestTicketingRepository : TicketingTicketRepository {
+class MockTicketingRepository : TicketingTicketRepository {
     override fun listTickets(): List<TicketFromTicketing> {
         return listOf(
             ticketingTicketGaulois,
